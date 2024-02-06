@@ -1,4 +1,5 @@
-### Phone Catalog
+# Phone Catalog
+**[DEMO LINK](https://daryna-hnidash.github.io/Phone_Catalog)**
 
 ## Description
 Mobile Phones Online Store with **React** and **TypeScript**
@@ -23,9 +24,5 @@ Display the total cost of purchases in the shopping cart.
 ### 4. Favorites Page
 Page to view and manage favorite products.
 Ability to add and remove items from the favorites list.
-
-
-**[DEMO LINK](https://daryna-hnidash.github.io/Phone_Catalog)**
-
 
 This project is created to showcase development skills with React and TypeScript, as well as the application of modern approaches to web application development.
