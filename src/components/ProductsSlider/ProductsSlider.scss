@@ -1,0 +1,50 @@
+@import "../../styles/utils/vars.scss";
+@import "../../styles/utils/mixins.scss";
+@import "../../styles/typography.scss";
+
+.products-slider {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__top {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+  }
+
+  &__title {
+    @extend %h1;
+  }
+
+  &__buttons {
+    display: flex;
+    gap: 16px;
+  }
+
+  &__viewport {
+    max-width: $width;
+    overflow: hidden;
+
+    @include onSmallDesktop {
+      max-width: $small-desktop-width;
+    }
+
+    @include onTablet {
+      max-width: $tablet-width;
+    }
+
+    @include onMobile {
+      max-width: $mobile-width;
+    }
+  }
+
+  &__items {
+    display: flex;
+    gap: 16px;
+    transition: transform ease-in 0.5s;
+  }
+}

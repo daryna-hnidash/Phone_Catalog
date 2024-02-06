@@ -1,0 +1,22 @@
+@import "../utils/mixins.scss";
+
+.page {
+  scroll-behavior: smooth;
+
+  &__body {
+    @extend %body-text;
+  }
+
+  &__app {
+    position: relative;
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+  }
+
+  &__main {
+    @include page-sizes;
+    margin: 0 auto;
+    margin-bottom: 80px;
+  }
+}

@@ -1,0 +1,54 @@
+@import "../../styles/utils/vars.scss";
+@import "../../styles/utils/mixins.scss";
+@import "../../styles/typography.scss";
+
+.nav {
+  display: flex;
+  align-items: center;
+
+  &__list {
+    display: flex;
+    gap: 64px;
+    align-items: center;
+
+    @extend %uppercase-text;
+
+    &--aside {
+      flex-direction: column;
+      font-size: 24px;
+
+      @include onTablet {
+        gap: 16px;
+      }
+    }
+  }
+
+  &__item {
+    display: flex;
+    align-self: center;
+    height: 100%;
+  }
+
+  &__link {
+    height: $header-height;
+    padding-block: 26px;
+    color: $gray-secondary;
+    text-decoration: none;
+    line-height: 1em;
+    align-self: center;
+    box-sizing: border-box;
+
+    @include onTablet {
+      padding-block: 4px;
+      height: auto;
+    }
+
+    &:hover {
+      color: $gray-primary;
+    }
+
+    &--is-active {
+      border-bottom: 3px solid $gray-primary;
+    }
+  }
+}
